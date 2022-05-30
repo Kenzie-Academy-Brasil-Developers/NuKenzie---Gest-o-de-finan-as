@@ -17,48 +17,39 @@
   --font__size-text2: 12px;
 }
 
-.card__container {
+.header__header {
+  width: 100%;
+  height: 60px;
   background-color: var(--color__gray1);
+  box-shadow: 0px 4px 32px -12px rgba(0, 0, 0, 0.25);
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+
+.header__img {
+  width: 60px;
+  height: 15px;
+  margin-left: 130px;
+}
+
+.header__button {
+  border: none;
+  padding: 10px;
   border-radius: 10px;
-  border-left: 4px solid #03b898;
-  margin-bottom: 20px;
-}
 
-.card {
-  margin-left: 25px;
-}
-
-.card__description {
-  font-family: var(--font__title);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  color: var(--color__back);
-}
-
-.card__type {
-  color: var(--color__grey3);
   font-family: var(--font__text);
   font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 22px;
-}
-
-.card__value {
-  margin-right: 65px;
-  margin-top: 5px;
-}
-
-.card__reais {
-  color: var(--color__back);
-  font-family: var(--font__title);
-  font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 19px;
+  margin-right: 130px;
+  cursor: pointer;
+}
+
+.header__button:hover {
+  background-color: var(--color__back);
+  color: var(--color__gray1);
 }

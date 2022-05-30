@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Roboto:wght@500&display=swap");
+
+:root {
+  --color__primary: #fd377e;
+  --color__secundary: #e34981;
+  --color__tertiary: #03b898;
+  --color__back: #282c34;
+  --color__grey3: #868e96;
+  --color__gray2: #e9ecef;
+  --color__gray1: #f8f9fa;
+  --font__title: "Roboto", sans-serif;
+  --font__size-title1: 28px;
+  --font__size-title2: 24px;
+  --font__size-title3: 20px;
+  --font__text: "Nunito", sans-serif;
+  --font__size-text: 16px;
+  --font__size-text2: 12px;
+}
+
+/*container do form*/
+.container__form {
+  border: 1px solid var(--color__gray2);
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*componente de descrição*/
+.description__form--box {
+  width: 80%;
+}
+
+.input__from--description {
+  width: 97%;
+}
+
+.exemplo__form {
+  color: var(--color__grey3);
+  font-family: var(--font__text);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/*elementos geais----------------------*/
+/*input geral do form*/
+.input__form {
+  background-color: var(--color__gray1);
+  color: var(--color__grey3);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+
+  font-family: var(--font__text);
+  font-style: normal;
+  font-weight: 700, bold;
+  font-size: 13px;
+  line-height: 26px;
+}
+
+/*h3 geral do form*/
+.h3__container--form {
+  color: var(--color__back);
+  font-size: var(--font__size-text2);
+  font-family: var(--font__title);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+}
+
+/*----------------------*/
+
+/*cmponente de valor*/
+.value__form--box {
+  margin-right: 40px;
+}
+
+.h3__container--form {
+}
+
+.input__from--value {
+  width: 90px;
+  font-family: var(--font__text);
+  font-style: normal;
+  font-weight: 700, bold;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.input__from--value:focus,
+.select__form:focus,
+.input__from--description:focus {
+  background-color: var(--background-page);
+  border: none;
+  outline: 0;
+  box-shadow: 0px 0px 10px 0px rgba(52, 52, 52, 0.25);
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+  border: none;
+  background-color: var(--background-page);
+}
+
+.input__value {
+  height: 39px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+}
+
+/*componente tipo de valor*/
+.typeValue__form--box {
+  width: 100px;
+}
+
+.select__form {
+  background-color: var(--color__gray1);
+  color: #5b6166;
+  border: none;
+  border-radius: 5px;
+  width: 110px;
+  height: 35px;
+
+  font-family: var(--font__text);
+  font-style: normal;
+  font-weight: 700, bold;
+  font-size: 13px;
+  line-height: 26px;
+  cursor: pointer;
+}
+
+.select__form-option {
+  background-color: var(--color__gray1);
+  color: var(--color__gray3);
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.value__form--select--box {
+  display: flex;
+}
+
+/*componente do botao*/
+.button__form--box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 23px;
+  margin-bottom: 20px;
+}
+
+.button__form {
+  width: 80%;
+  height: 48px;
+
+  background-color: var(--color__primary);
+  color: var(--color__gray1);
+
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button__form:hover {
+  background-color: var(--color__secundary);
+  color: white;
+}
+
+.img_rs {
+  width: 15px;
+  height: 13px;
+  margin-right: 2px;
+}

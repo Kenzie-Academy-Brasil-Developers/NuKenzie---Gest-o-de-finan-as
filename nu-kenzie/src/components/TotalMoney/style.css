@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Roboto:wght@500&display=swap");
+
+:root {
+  --color__primary: #fd377e;
+  --color__secundary: #e34981;
+  --color__tertiary: #03b898;
+  --color__back: #282c34;
+  --color__grey3: #868e96;
+  --color__gray2: #e9ecef;
+  --color__gray1: #f8f9fa;
+  --font__title: "Roboto", sans-serif;
+  --font__size-title1: 28px;
+  --font__size-title2: 24px;
+  --font__size-title3: 20px;
+  --font__text: "Nunito", sans-serif;
+  --font__size-text: 16px;
+  --font__size-text2: 12px;
+}
+
+.total__value--container {
+  width: 100%;
+  height: auto;
+
+  border: 1px solid var(--color__gray2);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  margin-top: 20px;
+}
+
+.text__total--saldo {
+}
+
+.title__total {
+  font-family: var(--font__title);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: #212529;
+}
+
+.text__total {
+  font-family: var(--font__text);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: var(--color__grey3);
+}
+
+.value__total--saldo {
+}
+
+.value__total--reais {
+  color: var(--color__primary);
+  font-family: var(--font__title);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+}
