@@ -30,8 +30,8 @@
 }
 
 .header__img {
-  width: 60px;
-  height: 15px;
+  width: 70px;
+  height: 20px;
   margin-left: 130px;
 }
 
@@ -50,6 +50,6 @@
 }
 
 .header__button:hover {
-  background-color: var(--color__back);
+  background-color: var(--color__grey3);
   color: var(--color__gray1);
 }

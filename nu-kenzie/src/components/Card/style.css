@@ -27,6 +27,23 @@
   margin-bottom: 20px;
 }
 
+.card__container2 {
+  background-color: var(--color__gray1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 10px;
+  border-left: 4px solid #626262;
+  margin-bottom: 20px;
+}
+
+.card__container:hover,
+.card__container2:hover {
+  box-shadow: 1px 6px 16px 0px rgba(208, 208, 208, 0.62);
+  -webkit-box-shadow: 1px 6px 16px 0px rgba(208, 208, 208, 0.62);
+  -moz-box-shadow: 1px 6px 16px 0px rgba(208, 208, 208, 0.62);
+}
+
 .card {
   margin-left: 25px;
 }
@@ -50,8 +67,17 @@
 }
 
 .card__value {
-  margin-right: 65px;
   margin-top: 5px;
+}
+
+.aside__card {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-content: flex-start;
+  align-items: center;
 }
 
 .card__reais {
@@ -61,4 +87,32 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
+  float: right;
+  margin-top: 20px;
+}
+
+.trash {
+  width: 11px;
+  height: 11px;
+  padding: 5px;
+}
+
+.box__trash {
+  width: 18px;
+  height: 18px;
+  padding: 3px;
+  margin-top: 10px;
+  margin-right: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--color__grey3);
+
+  border-radius: 5px;
+}
+
+.box__trash:hover {
+  background-color: var(--color__back);
 }

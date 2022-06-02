@@ -11,14 +11,14 @@
 .container__list {
   float: right;
   width: 560px;
-  height: auto;
   min-height: 500px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
-  margin-top: -20px;
 }
 
 .container__aside {
   width: 300px;
 }
+
+

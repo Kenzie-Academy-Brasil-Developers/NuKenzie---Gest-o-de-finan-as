@@ -49,3 +49,17 @@
   background-color: var(--color__primary);
   color: var(--color__gray1);
 }
+
+.buttons__todos:hover {
+  background-color: var(--color__secundary);
+}
+
+.buttons__recebimentos:hover,
+.buttons__gastos:hover {
+  background-color: var(--color__gray2);
+}
+
+.cards__container {
+  width: auto;
+  height: auto;
+}

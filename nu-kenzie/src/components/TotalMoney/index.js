@@ -1,4 +1,4 @@
-import './style.css'
+import "./style.css";
 
 function TotalMoney({ listTransactions }) {
   const valorTotal = listTransactions.reduce((valorAnterior, valorAtual) => {

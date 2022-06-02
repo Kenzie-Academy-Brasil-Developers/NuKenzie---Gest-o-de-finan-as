@@ -55,11 +55,11 @@ function Form({ listTransactions, setListTransactions }) {
             <option className="select__form-option" value="selecione">
               Selecione
             </option>
-            <option className="select__form-option" value="recebimento">
-              Recebimento
+            <option className="select__form-option" value="Entrada">
+              Entrada
             </option>
-            <option className="select__form-option" value="gasto">
-              Gasto
+            <option className="select__form-option" value="Saída">
+              Saída
             </option>
           </select>
         </div>
