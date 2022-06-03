@@ -1,5 +1,5 @@
 import "./style.css";
-import Trash from ".Trash.png";
+import Trash from "./Trash.png";
 
 function Card({ transaction, handleList }) {
   return (
