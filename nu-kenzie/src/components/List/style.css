@@ -45,18 +45,18 @@
   cursor: pointer;
 }
 
-.buttons__todos {
-  background-color: var(--color__primary);
+.buttons__recebimentos:hover,
+.buttons__gastos:hover,
+.buttons__todos:hover {
+  background-color: var(--color__grey3);
   color: var(--color__gray1);
 }
 
-.buttons__todos:hover {
-  background-color: var(--color__secundary);
-}
-
-.buttons__recebimentos:hover,
-.buttons__gastos:hover {
-  background-color: var(--color__gray2);
+.buttons__recebimentos:focus,
+.buttons__gastos:focus,
+.buttons__todos:focus {
+  background-color: var(--color__primary);
+  color: var(--color__gray1);
 }
 
 .cards__container {
@@ -76,7 +76,6 @@
 
   margin-top: 15px;
 }
-
 
 .landing__content {
   width: 380px;
