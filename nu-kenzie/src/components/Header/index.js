@@ -1,5 +1,5 @@
 import "./style.css";
-import Logo from "../img/Logo.png";
+import Logo from ".Logo.png";
 
 function Header({ sair }) {
   return (
