@@ -7,13 +7,11 @@ import { useState } from "react";
 import HomePage from "./components/HomePage";
 
 function App() {
+  //state lista de movimentações
   const [listTransactions, setListTransactions] = useState([]);
+  const [listFilter, setListFilter] = useState([]);
 
-  const addMovement = (newMovement) => {
-    const list = [...listTransactions, newMovement];
-    setListTransactions(list);
-  };
-
+  //função que exclui o item
   const handleList = (item) => {
     const result = listTransactions.filter((elem) => {
       return elem !== item;
@@ -22,14 +20,16 @@ function App() {
     setListTransactions(result);
   };
 
-  function filterEntrada(elem) {
-    const result = listTransactions.filter((transaction) => {
+  //função que filtra (entrada / saída)
+  function filter(elem) {
+    const result = listFilter.filter((transaction) => {
       return transaction.type === `${elem}`;
     });
 
     return setListTransactions(result);
   }
 
+  //state para paginação
   const [init, setInit] = useState(false);
 
   const iniciar = () => {
@@ -42,7 +42,7 @@ function App() {
 
   return (
     <div className="App">
-      {init ? (
+      {init ? ( //condicional para paginação
         <>
           <div>
             <Header sair={sair} />
@@ -53,7 +53,7 @@ function App() {
               <Form
                 listTransactions={listTransactions}
                 setListTransactions={setListTransactions}
-                addMovement={addMovement}
+                setListFilter={setListFilter}
               />
 
               <TotalMoney listTransactions={listTransactions} />
@@ -63,7 +63,9 @@ function App() {
               <List
                 listTransactions={listTransactions}
                 handleList={handleList}
-                filter={filterEntrada}
+                filter={filter}
+                setListTransactions={setListTransactions}
+                listFilter={listFilter}
               />
             </div>
           </main>

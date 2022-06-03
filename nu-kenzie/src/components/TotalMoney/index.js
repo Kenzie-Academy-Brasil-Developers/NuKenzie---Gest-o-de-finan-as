@@ -1,9 +1,9 @@
 import "./style.css";
 
 function TotalMoney({ listTransactions }) {
-  const valorTotal = listTransactions.reduce((valorAnterior, valorAtual) => {
-    return valorAnterior + valorAtual.value;
-  }, 0);
+  const calcEntrada = listTransactions.filter(({type})=> type === "Entrada").reduce((acc, {value})=> acc + value, 0);
+  const calcSaida = listTransactions.filter(({type})=> type === "Saída").reduce((acc, {value})=> acc + value, 0);
+  const valorTotal = calcEntrada - calcSaida;
 
   return (
     <div className="total__value--container">

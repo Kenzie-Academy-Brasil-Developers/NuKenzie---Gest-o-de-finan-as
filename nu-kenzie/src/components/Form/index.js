@@ -1,8 +1,8 @@
 import "./style.css";
 import { useState } from "react";
-import Real from "../img/Real.png"
+import Real from "../img/Real.png";
 
-function Form({ listTransactions, setListTransactions }) {
+function Form({ listTransactions, setListTransactions, setListFilter }) {
   const [description, setDescription] = useState("");
   const [value, setValue] = useState();
   const [type, setType] = useState("");
@@ -13,12 +13,13 @@ function Form({ listTransactions, setListTransactions }) {
       value,
       type,
     };
-    //console.log(transaction)
     setListTransactions([...listTransactions, transaction]);
+    setListFilter([...listTransactions, transaction]);
   }
 
   return (
     <div className="container__form">
+      
       <div className="description__form--box">
         <h3 className="h3__container--form">Descrição:</h3>
         <input
@@ -34,14 +35,14 @@ function Form({ listTransactions, setListTransactions }) {
         <div className="value__form--box">
           <h3 className="h3__container--form">Valor:</h3>
           <div className="input__value input__form">
-          <input
-            className="input__form input__from--value"
-            placeholder="1"
-            name="value"
-            type="number"
-            onChange={(event) => setValue(parseInt(event.target.value))}
-          ></input>
-          <img className="img_rs" alt="R$" src={Real}/>
+            <input
+              className="input__form input__from--value"
+              placeholder="1"
+              name="value"
+              type="number"
+              onChange={(event) => setValue(parseInt(event.target.value))}
+            ></input>
+            <img className="img_rs" alt="R$" src={Real} />
           </div>
         </div>
 
